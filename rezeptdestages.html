@@ -1,0 +1,186 @@
+<html>
+
+<head>
+    <title id="title">Griechischer Salat</title>
+    <link rel="stylesheet" href="receipt.css">
+    <link rel="stylesheet" href="footer-menu.css">
+    <script src="kochwelt.js"></script>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&amp;display=swap" rel="stylesheet">
+</head>
+
+<body onload="loadRepice(); calculate();">
+    <div class="overflow-hidden">
+
+        <div class="Menu" class="padding-left">
+            <a href="index.html"><img src="img/logo.png"></a>
+            <div class="menu-links">
+                <a href="index.html">Start</a>
+                <a href="rezeptdestages.html">Rezept des Tages</a>
+                <a href="#contact">Kontakt</a>
+                <a href="#footer">Impressum</a>
+            </div>
+        </div>
+
+
+        <!-- Menu Responsive -->
+
+        <img onclick="showMenu()" class="menu-bar" src="img/bars-solid.svg">
+        <div class="overlay-menu" id="menu">
+            <a href="index.html">Start</a>
+            <a href="rezeptdestages.html">Rezept des Tages</a>
+            <a onclick="buttonClose()" href="#contact">Kontakt </a> 
+            <a onclick="buttonClose()" href="#footer">Impressum</a>
+
+            <button onclick="buttonClose()" class="close-button">
+                Close
+            </button>
+
+    
+
+        </div>
+
+        <div class="margin-left">
+            <div>
+                <h1 id="headline">Griechischer Salat</h1>
+            </div>
+
+            <div class="img">
+                <img id="image" src="img/salad.jpg">
+            </div>
+
+            <div class="facts" class="padding-left">
+                <div class="label">
+                    <img src="img/icons/clock-regular.svg">
+                    <div id="time">15 Min</div>
+                </div>
+
+                <div class="label">
+                    <img src="img/icons/brain-solid.svg">
+                    <div id="difficulty">simpel</div>
+                </div>
+
+                <div class="label">
+                    <img src="img/icons/calendar-alt-regular.svg">
+                    <div id="date">16.10.2020</div>
+                </div>
+            </div>
+            <div class="ingredients" class="padding-left">
+                <p>Zutaten für</p>
+                <div class="value-button"> <input id="number" value="4" type="number" type="text" />
+                    <button onclick="calculate()">Portionen</button>
+                </div>
+            </div>
+
+            <div class="makings">
+                <div>
+                    <p id='cucumbers'>Salatgurke(n)</p>
+                </div>
+                <div>
+                    <p id='pepper'>Paprikaschot(n), rot und grün</p>
+                </div>
+                <div>
+                    <p id='tomato'>Tomate (n)</p>
+                </div>
+                <div>
+                    <p id='onion'>Zwiebel (n)</p>
+                </div>
+                <div>
+                    <p id="cheese">g Schafskäse</p>
+                </div>
+                <div>
+                    <p id="olives">1 Glas Oliven, schwarze, ca. </p>
+                </div>
+                <div>
+                    <p>Salz und Pfeffer</p>
+                </div>
+                <div>
+                    <p id="lemon">Zitrone(n)</p>
+                </div>
+                <div>
+                    <p id="oliveoil">ml Olivenöl</p>
+                </div>
+                <div>
+                    <p>Oregano</p>
+                </div>
+            </div>
+
+            <div class="preparation" class="padding-left">
+                <h2> Zubereitung</h2>
+
+                <div  id="time" class="label2">
+                    <img src="img/icons/clock-regular.svg">
+                  20 Min.
+                </div>
+
+                <p id="preparation1">
+                    <span>1.</span> Gurke waschen und ungeschält in dünne Scheiben oder Stücke schneiden, entkernen und
+                    in dünne
+                    Streifen schneiden.
+                </p>
+                <p id="preparation2">
+                    <span>2.</span> Tomaten waschen und achteln. Zwiebel schälen und in feine Ringe schneiden.
+                    Schafskäse
+                    würfeln und mit Oregano bestreuen. Oliven abgießen und mit Gurke, Paprika, Tomaten, Zwiebel und
+                    Schafskäse
+                    in eine Schüssel geben.
+                </p>
+                <p id="preparation3">
+                    <span>3.</span> Olivenöl, Zitronensaft, Salz und Pfeffer zu einer Sauce verrühren und über den Salat
+                    gießen.
+                    Umrühren.
+                </p>
+
+                <p id="preparation4"></p>
+                <p id="preparation5"></p>
+                <p id="preparation6"></p>
+                <p id="preparation7"></p>
+                <p id="preparation8"></p>
+                <p id="preparation9"></p>
+
+            </div>
+
+
+            <div class="author" class="padding-left">
+                <b>Rezept erstellt von </b>
+                <div class="profile"> <img src="img/profile.png" > <b id="person">Dan</b>
+                </div>
+
+            </div>
+        </div>
+        <div class="footer" id="footer" class="padding-left">
+            <div class="footer-icons">
+                <div class="logo">
+                    <img src="img/logo_small-white.png">
+
+                </div>
+
+                <div class="footer-socia-media">
+                    <a href="#"><img class="social-media-icons" src="img/facebook-4-64.png"></a>
+                    <a href="https://youtu.be/milcnp2cKaI"><img class="social-media-icons" src="img/youtube-4-64.png"></a>
+                    <a href="#"><img class="social-media-icons" src="img/instagram-4-64.png"></a>
+                </div>
+            </div>
+
+        </div>
+        <div class="contact" id="contact" class="padding-left">
+            ® Kochwelt GmbH <br>
+            kochwelt@info.de
+        </div>
+
+        <div class="impressum" class="padding-left">
+            Created my free logo at &nbsp; <a href="https://logomakr.com" target="_blank"> LogoMakr.com. &nbsp; </a>
+            The icons are provided by &nbsp; <a href="https://fontawesome.com/" rel="nofollow" target="_blank">
+                FontAwesome</a>
+            &nbsp; unter the &nbsp; <a href="https://fontawesome.com/license" target="_blank" rel="nofollow"> &nbsp;
+                Creative Commons &nbsp;
+                Attribution 4.0 International license</a>.
+        </div>
+
+
+    </div>
+
+</body>
+
+</html>

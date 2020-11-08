@@ -1,0 +1,128 @@
+<html>
+
+<head>
+    <title>Kochwelt</title>
+    <link rel="stylesheet" href="kochwelt.css">
+    <link rel="stylesheet" href="footer-menu.css">
+    <script src="kochwelt.js"></script>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <!-- <meta name='viewport' 
+     content='width=device-width, initial-scale=1.0, maximum-scale=1.0, 
+     user-scalable=0' >-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+    
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&amp;display=swap" rel="stylesheet">
+</head>
+
+<body onload="startSlider()">
+    <div class="overflow-hidden">
+        <!-- Menu Responsive -->
+        <img onclick="showMenu()" class="menu-bar" src="img/bars-solid.svg">
+        <div class="overlay-menu" id="menu">
+            <a href="index.html">Start</a>
+            <a href="rezeptdestages.html">Rezept des Tages</a>
+            <a onclick="buttonClose()" href="#contact">Kontakt</a>
+            <a onclick="buttonClose()" href="#footer">Impressum</a>
+
+            <button onclick="buttonClose()" class="close-button">
+                Close
+            </button>
+
+        </div>
+
+        <div class="Menu" class="show-menu" id="menu">
+            <a href="index.html"><img src="img/logo.png"></a>
+            <div class="menu-links">
+                <a href="index.html">Start</a>
+                <a href="rezeptdestages.html">Rezept des Tages</a>
+                <a href="#contact">Kontakt</a>
+                <a href="#footer">Impressum</a>
+            </div>
+        </div>
+
+
+        <!-- Featured food section -->
+        <div class="bg1">
+            <img src="img/croissant.jpg" class="main-img">
+            <div class="main-text-container">
+                <h1>Französische Croissant</h1>
+                <p class="main-text">Mit diesem Croissant-Rezept kannst du den französischen Frühstücksklassiker zu
+                    Hause
+                    selber machen, statt samstagmorgens beim Bäcker anzustehen. Unsere einfache Anleitung verhilft dir
+                    dabei
+                    Schritt für Schritt zum Erfolg.</p>
+                <button><a href="rezeptdestages.html?id=3">Rezept öffnen</a></button>
+
+            </div>
+        </div>
+
+
+
+        <div class="bg2">
+            <h1 class="text-center">Lust auf was neues?</h1>
+            <div class="slider-container">
+                <div id="img-1" class="slider-img">
+                    <a href="rezeptdestages.html"> <img class="img-1" src="img/salad.jpg"></a>
+                    <a href="rezeptdestages.html" class="bg2-text">Griechischer Salat</a>
+
+                </div>
+                <div id="img-2" class="slider-img">
+                    <a href="rezeptdestages.html?id=1"> <img class="img-2" src="img/NudelBowl.jpeg"> </a>
+                    <a href="rezeptdestages.html?id=1" class="bg2-text">Bunte Nudel-Bowl</a>
+
+                </div>
+                <div id="img-3" class="slider-img">
+                    <a href="rezeptdestages.html?id=3"> <img class="img-3" src="img/croissant.jpg"> </a>
+                    <a href="rezeptdestages.html?id=3" class="bg2-text">Frische Croissants</a>
+
+                </div>
+            </div>
+
+        </div>
+
+        <div class="bg3">
+            <h1 class="text-center"> Pfanne vs. Wok - Was ist besser?</h1>
+
+            <div class="text-bg3">
+                <p>Im Gegensatz zu einer Pfanne, wo der Boden gleichmäßig heiß sein sollte, hat ein Wok einen "Hitzefleck", wo man die Sachen gart. Sie werden anschließend an den Wänden warm gehalten, was bei der Pfanne kaum möglich ist. Daher sind zwar vergleichbare Kochergebnisse möglich, die Umstände jedoch groß.
+                    <br><br><a href="rezeptdestages.html?id=2">Hier geht's zu unserem lieblings Wok-Rezept</a>
+                </p>
+
+                <img src="img/wok.jpg">
+            </div>
+        </div>
+
+        <div class="footer" id="footer">
+            <div class="footer-icons">
+                <div class="logo">
+                    <img src="img/logo_small-white.png">
+
+                </div>
+
+                <div class="footer-socia-media">
+                    <a href="#"><img class="social-media-icons" src="img/facebook-4-64.png"></a>
+                    <a href="https://youtu.be/milcnp2cKaI"><img class="social-media-icons" src="img/youtube-4-64.png"></a>
+                    <a href="#"><img class="social-media-icons" src="img/instagram-4-64.png"></a>
+                </div>
+            </div>
+
+        </div>
+        <div class="contact" id="contact">
+            ® Kochwelt GmbH <br>
+            kochwelt@info.de
+        </div>
+
+        <div class="impressum">
+            Created my free logo at &nbsp; <a href="https://logomakr.com" target="_blank"> LogoMakr.com. &nbsp; </a>
+            The icons are provided by &nbsp; <a href="https://fontawesome.com/" rel="nofollow" target="_blank">
+                FontAwesome</a>
+            &nbsp; unter the &nbsp; <a href="https://fontawesome.com/license" target="_blank" rel="nofollow"> &nbsp;
+                Creative Commons &nbsp;
+                Attribution 4.0 International license</a>.
+        </div>
+    </div>
+
+
+</body>
+
+</html>

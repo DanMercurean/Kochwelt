@@ -1,0 +1,310 @@
+body {
+    margin: 0px;
+    overflow-x: hidden;
+}
+
+.margin-left {
+    margin-left: 50px;
+}
+
+.bg1 {
+    display: flex;
+    flex-direction: column;
+    margin-left: 40px;
+    margin-top: 30px;
+}
+
+.img {
+    margin-right: 100px;
+}
+
+.img img {
+    display: flex;
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+h1 {
+    font-family: 'Raleway', sans-serif;
+    font-size: 30px;
+    color: black;
+    display: flex;
+}
+
+.facts {
+    margin-top: 20px;
+    display: flex;
+    justify-content: left;
+    font-family: 'Raleway', sans-serif;
+}
+
+.facts img {
+    width: 20px;
+    padding-right: 10px;
+}
+
+.calendar {
+    display: flex;
+    margin-top: 25px;
+    background-color: rgb(224, 224, 224);
+    border-radius: 10px;
+    font-family: 'Raleway', sans-serif;
+    font-size: 15px;
+}
+
+.calendar img {
+    display: flex;
+    width: 20px;
+    margin-right: 6px;
+}
+
+.label {
+    padding: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(224, 224, 224);
+    margin-right: 64px;
+    border-radius: 10px;
+}
+
+.label2 {
+    padding: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(224, 224, 224);
+    margin-right: 64px;
+    border-radius: 10px;
+    width: 85px;
+}
+
+.label2 img {
+    width: 20px;
+    margin-right: 6px;
+}
+
+.label img {
+    width: 20px;
+    margin-right: 6px;
+}
+
+.makings {
+    margin-right: 100px;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Raleway', sans-serif;
+}
+
+.makings div:nth-child(2n+1) {
+    background-color:  rgb(224, 224, 224);
+}
+
+.makings div {
+    padding-left: 15px;
+}
+
+button {
+    border: none;
+    font-size: 20px;
+    background-color: #9bb60b;
+    color: white;
+    height: 21px;
+    border-width: thin;
+    border-color: gray;
+    cursor: pointer;
+    height: 40px;
+    width: 120px;
+    margin-left: -10px;
+}
+
+.ingredients {
+    display: flex;
+    align-items: center;
+    margin-top: 50px;
+    font-size: 20px;
+    font-family: 'Raleway', sans-serif;
+    padding-bottom: 10px;
+}
+
+input {
+    height: 40px;
+    width: 120px;
+    border-radius: 8px;
+    border-width: 1px;
+    border-color:   rgb(224, 224, 224);
+    padding-top: 5px;
+}
+
+p {
+    margin-right: 30px;
+}
+
+.preparation {
+    display: flex;
+    flex-direction: column;
+    font-family: 'Raleway', sans-serif;
+    font-size: 12pt;
+    margin-top: 30px;
+}
+
+h2 {
+    font-family: 'Raleway', sans-serif;
+    font-size: 22px;
+}
+
+span {
+    color: #9bb60b;
+}
+
+.author {
+    display: flex;
+    flex-direction: column;
+    font-family: 'Raleway', sans-serif;
+    font-size: 12pt;
+    margin-top: 30px;
+    margin-bottom: 50px;
+}
+
+.profile img {
+    width: 60px;
+    height: 60px;
+    border-radius: 40px;
+    margin-right: 15px;
+}
+
+.profile {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.footer {
+    background-color: rgb(1, 73, 1);
+}
+
+.logo {
+    margin-left: 50px;
+}
+
+.logo img {
+    width: 50px;
+    margin-top: 20px;
+    object-fit: cover;
+}
+
+.footer-socia-media {
+    margin-right: 50px;
+    margin-top: 20px;
+}
+
+.footer-socia-media img {
+    margin-right: 10px;
+    width: 55px;
+    height: 55px;
+}
+
+.footer-icons {
+    justify-content: space-between;
+    display: flex;
+}
+
+
+.contact {
+    display: flex;
+    justify-content: flex-start;
+    background-color: rgb(1, 73, 1);
+    font-family: 'Raleway', sans-serif;
+    color: white;
+    padding-top: 20px;
+    font-size: 10px;
+    padding-left: 50px;
+}
+
+
+
+@media(max-width: 800px) {
+    body {
+        font-size: 1.6em !important;
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+    }
+    
+    h1 {
+        font-size: 45px;
+    }
+    .img {
+        margin-right: 50px;
+    }
+    .label {
+        margin-right: 50px;
+    }
+    .label2 {
+        width: 150px;
+    }
+    .label2 img {
+        width: 30px;
+    }
+    .ingredients {
+        font-size: 1em;
+        flex-direction: column;
+    }
+    .value-button {
+        margin-bottom: 40px;
+        align-items: center;
+        display: flex;
+    }
+    input {
+        height: 50px;
+        width: 140px;
+        font-size: 22px;
+    }
+    button {
+        border: none;
+        font-size: 25px;
+        background-color: #9bb60b;
+        color: white;
+        height: 21px;
+        border-width: thin;
+        border-color: gray;
+        cursor: pointer;
+        height: 50px;
+        width: 140px;
+        margin-left: -6px;
+    }
+    .makings {
+        margin-right: 50px;
+    }
+    .preparation {
+        font-size: 1.2em;
+        margin-right: 50px;
+    }
+    h2 {
+        font-size: 1.2em;
+    }
+    p {
+        font-size: 1.2em;
+        text-align: center;
+    }
+    .author {
+        font-size: 1em;
+    }
+    .overflow-hidden{
+        overflow-x: hidden;
+    }
+}
+
+@media(min-width: 800px) {
+
+.menu-bar {
+    display: none; 
+}
+
+.overlay-menu {
+    display: none; 
+}
+}

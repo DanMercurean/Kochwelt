@@ -1,0 +1,180 @@
+<html>
+
+<head>
+    <link rel="stylesheet" href="receipt.css">
+    <link rel="stylesheet" href="footer-menu.css">
+    <script src="kochwelt-nudeln.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&amp;display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+</head>
+
+
+<body onload="loadRepice(); calculate();">
+    <div class="overflow-hidden">
+        <div class="Menu">
+            <div><img src="img/logo.png"></div>
+            <div class="menu-links">
+                <a href="index.html">Start</a>
+                <a href="rezeptdestages.html">Rezept des Tages</a>
+                <a href="#contact">Kontakt</a>
+                <a href="#footer">Impressum</a>
+            </div>
+        </div>
+
+        <!-- Menu Responsive -->
+        <img onclick="showMenu()" class="menu-bar" src="img/bars-solid.svg">
+        <div class="overlay-menu" id="menu">
+            <a href="index.html">Start</a>
+            <a href="rezeptdestages.html">Rezept des Tages</a>
+            <a href="#contact">Kontakt</a>
+            <a href="#footer">Impressum</a>
+
+            <button onclick="buttonClose()" class="close-button">
+                Close
+            </button>
+
+        </div>
+
+        <div class="margin-left">
+            <div>
+                <h1 id="headline">Bunte Nudel-Bowl</h1>
+            </div>
+
+            <div class="img">
+                <img src="img/NudelBowl.jpeg">
+            </div>
+
+
+            <div class="facts">
+                <div class="label">
+                    <img src="img/icons/clock-regular.svg">
+                    <div>15 Min</div>
+                </div>
+
+                <div class="label">
+                    <img src="img/icons/brain-solid.svg">
+                    <div>simpel</div>
+                </div>
+
+                <div class="label">
+                    <img src="img/icons/calendar-alt-regular.svg">
+                    <div>16.10.2020</div>
+                </div>
+            </div>
+
+
+            <div class="ingredients">
+                <p>Zutaten für</p>
+                <div class="value-button">
+                    <input id="number" value="1" type="number" />
+                    <button onclick="calculate()">Portionen</button>
+                </div>
+            </div>
+
+            <div class="makings">
+                <div>
+                    <p id='aubergine'>Aubergine(n)</p>
+                </div>
+                <div>
+                    <p id='pepper'>Spitzpaprikaschoten rot und gelb</p>
+                </div>
+                <div>
+                    <p id='oil'>EL Olivenöl</p>
+                </div>
+                <div>
+                    <p id="parsley">Bund Petersilie</p>
+                </div>
+                <div>
+                    <p id="noodle">g Mi-Nudel</p>
+                </div>
+                <div>
+                    <p id="garlic">Knoblauchzehen </p>
+                </div>
+                <div>
+                    <p id="sugar">Prise Zucker</p>
+                </div>
+                <div>
+                    <p>Salz </p>
+                </div>
+                <div>
+                    <p>Pfeffer</p>
+                </div>
+                <div>
+                    <p id="vinegar">EL Weißweinessig</p>
+                </div>
+
+            </div>
+
+
+            <div class="preparation">
+                <h2> Zubereitung</h2>
+
+                <div class="label2">
+                    <img src="img/icons/clock-regular.svg">
+                    20 Min.
+                </div>
+
+                <p>
+                    <span>1.</span> Die Aubergine waschen, putzen und in längs in dünne Scheiben schneiden, danach
+                    salzen
+                    und 10
+                    bis 15 Minuten ziehen lassen.
+                </p>
+                <p>
+                    <span>2.</span> Den Ofen vorheizen. Das restlicge Gemüse waschen und mit 2 EL Öl, Salz und Pfeffer
+                    vermengen. Danach für ca. 15 Minuten im Ofen schmoren lassen. Die Aubergine trocken tupfen, dünn mit
+                    Öl
+                    bestreichen, pfeffern und in einer beschichteten Pfanne unter mehrmaligem Wenden anbraten, bis die
+                    Aubergine
+                    fertig ist.
+                    Anschließend werden die Nudeln mit heißem Wasser übergossen.
+                </p>
+                <p>
+                    <span>3.</span> Den Knoblauch schälen, in feine Scheibchen schneiden und im übrigen Öl in einer Pfanne goldbraun anbraten. Mit dem Zucker bestreuen, mit dem Essig ablöschen und das gegrillte Gemüse unterschwenken. Die Mi-Nudeln untermischen und das Ganze nach Bedarf abschmecken. Vor dem Servieren noch mit etwas Sesam und Petersilie verzieren.
+                </p>
+
+            </div>
+
+
+            <div class="author">
+                <b>Rezept erstellt von</b>
+                <div class="profile"> <img src="img/profile.png"> Yvonne
+                </div>
+
+            </div>
+        </div>
+        <div class="footer" id="footer">
+            <div class="footer-icons">
+                <div class="logo">
+                    <img src="img/logo_small-white.png">
+
+                </div>
+
+                <div class="footer-socia-media">
+                    <a href="#"><img class="social-media-icons" src="img/facebook-4-64.png"></a>
+                    <a href="#"><img class="social-media-icons" src="img/youtube-4-64.png"></a>
+                    <a href="#"><img class="social-media-icons" src="img/instagram-4-64.png"></a>
+                </div>
+            </div>
+
+        </div>
+        <div class="contact" id="contact">
+            ® Kochwelt GmbH <br>
+            kochwelt@info.de
+        </div>
+
+        <div class="impressum">
+            Created my free logo at &nbsp; <a href="https://logomakr.com" target="_blank"> LogoMakr.com. &nbsp; </a>
+            The icons are provided by &nbsp; <a href="https://fontawesome.com/" rel="nofollow" target="_blank">
+                FontAwesome</a>
+            &nbsp; unter the &nbsp; <a href="https://fontawesome.com/license" target="_blank" rel="nofollow"> &nbsp;
+                Creative Commons &nbsp;
+                Attribution 4.0 International license</a>.
+        </div>
+    </div>
+
+</body>
+
+</html>
