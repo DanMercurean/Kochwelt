@@ -296,15 +296,13 @@ span {
     .overflow-hidden{
         overflow-x: hidden;
     }
-}
+}@media(min-width: 800px) {
 
-@media(min-width: 800px) {
-
-.menu-bar {
-    display: none; 
-}
-
-.overlay-menu {
-    display: none; 
-}
-}
+    .menu-bar {
+        display: none; 
+    }
+    
+    .overlay-menu {
+        display: none; 
+    }
+    }

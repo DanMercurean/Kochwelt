@@ -90,7 +90,7 @@ body {
         overflow-x: hidden;
     }
     .menu {
-        width: auto;
+        width: 100%;
     }
     .menu img {
         width: 400px;
