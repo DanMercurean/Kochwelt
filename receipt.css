@@ -35,9 +35,11 @@ h1 {
 
 .facts {
     margin-top: 20px;
+    margin-left: 20px;
     display: flex;
     justify-content: left;
     font-family: 'Raleway', sans-serif;
+    font-size: 10px;
 }
 
 .facts img {
@@ -92,14 +94,14 @@ h1 {
 }
 
 .makings {
-    margin-right: 100px;
     display: flex;
     flex-direction: column;
     font-family: 'Raleway', sans-serif;
+    margin-right: 100px;
 }
 
 .makings div:nth-child(2n+1) {
-    background-color:  rgb(224, 224, 224);
+    background-color: rgb(224, 224, 224);
 }
 
 .makings div {
@@ -134,7 +136,7 @@ input {
     width: 120px;
     border-radius: 8px;
     border-width: 1px;
-    border-color:   rgb(224, 224, 224);
+    border-color: rgb(224, 224, 224);
     padding-top: 5px;
 }
 
@@ -212,7 +214,6 @@ span {
     display: flex;
 }
 
-
 .contact {
     display: flex;
     justify-content: flex-start;
@@ -224,34 +225,45 @@ span {
     padding-left: 50px;
 }
 
-
-
 @media(max-width: 800px) {
     body {
-        font-size: 1.6em !important;
+        font-size: 1.1em !important;
         display: flex;
         flex-direction: column;
         position: absolute;
     }
-    
+
+    .margin-left {
+        margin-left: 20px;
+    }
+  
     h1 {
-        font-size: 45px;
+        font-size: 34px;
+        text-align: center;
+        margin-left: 30px;
     }
     .img {
-        margin-right: 50px;
+        margin-right: 20px;
+        margin-left: 20px;
+    }
+    
+    .margin-left {
+        margin-left: 0px;
     }
     .label {
-        margin-right: 50px;
+        margin-right: 20px;
     }
     .label2 {
-        width: 150px;
+        width: 90px;
+        margin-left: 106px;
     }
     .label2 img {
-        width: 30px;
+        width: 20px;
     }
     .ingredients {
         font-size: 1em;
         flex-direction: column;
+        margin-top: 20px; 
     }
     .value-button {
         margin-bottom: 40px;
@@ -259,50 +271,57 @@ span {
         display: flex;
     }
     input {
-        height: 50px;
-        width: 140px;
-        font-size: 22px;
+        height: 40px;
+        width: 90px;
+        font-size: 20px;
     }
     button {
         border: none;
-        font-size: 25px;
+        font-size: 19px;
         background-color: #9bb60b;
         color: white;
         height: 21px;
         border-width: thin;
         border-color: gray;
         cursor: pointer;
-        height: 50px;
-        width: 140px;
+        height: 40;
+        width: 100px;
         margin-left: -6px;
     }
     .makings {
-        margin-right: 50px;
+        margin-right: 20px;
+        margin-left:20px; 
     }
     .preparation {
-        font-size: 1.2em;
-        margin-right: 50px;
+        font-size: 0.8em;
+        margin-right: 20px;
+        margin-left: 20px;
+        text-align: center; 
     }
+
+
     h2 {
-        font-size: 1.2em;
+        font-size: 1.2em !important;
     }
     p {
         font-size: 1.2em;
         text-align: center;
+        margin-right: 0px;
     }
     .author {
         font-size: 1em;
+        margin-left: 20px; 
     }
-    .overflow-hidden{
+    .overflow-hidden {
         overflow-x: hidden;
     }
-}@media(min-width: 800px) {
+}
 
+@media(min-width: 800px) {
     .menu-bar {
-        display: none; 
+        display: none;
     }
-    
     .overlay-menu {
-        display: none; 
+        display: none;
     }
-    }
+}
